@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { formatDate } from '$lib/utils'
+	import { formatDate } from '$lib/utils';
 
-	export let data
+	export let data;
 </script>
 
 <!-- SEO -->
@@ -11,49 +11,17 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<article>
-  <!-- Title -->
-	<hgroup>
-		<h1>{data.meta.title}</h1>
-		<p>Published at {formatDate(data.meta.date)}</p>
+<article class="mt-4">
+	<!-- Title -->
+	<hgroup class="flex flex-col gap-4">
+		<p class="text-sm italic text-gray-100/80">{formatDate(data.meta.date)}</p>
+		<h1 class="text-2xl font-semibold">{data.meta.title}</h1>
 	</hgroup>
 
-  <!-- Tags -->
-	<div class="tags">
-		{#each data.meta.categories as category}
-			<span class="surface-4">&num;{category}</span>
-		{/each}
-	</div>
+	<hr class="my-6" />
 
-  <!-- Post -->
-	<div class="prose">
+	<!-- Post -->
+	<div>
 		<svelte:component this={data.content} />
 	</div>
 </article>
-
-<style>
-	article {
-		max-inline-size: var(--size-content-3);
-		margin-inline: auto;
-	}
-
-	h1 {
-		text-transform: capitalize;
-	}
-
-	h1 + p {
-		margin-top: var(--size-2);
-		color: var(--text-2);
-	}
-
-	.tags {
-		display: flex;
-		gap: var(--size-3);
-		margin-top: var(--size-7);
-	}
-
-	.tags > * {
-		padding: var(--size-2) var(--size-3);
-		border-radius: var(--radius-round);
-	}
-</style>
