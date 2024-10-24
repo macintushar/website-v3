@@ -1,5 +1,6 @@
 <script>
 	import { Badge } from '$lib/components/ui/badge';
+	import ProfilePic from '/src/assets/images/profile.jpeg';
 
 	const organisation = 'AI Squared';
 	const role = 'Software Engineer (SDE-1)';
@@ -29,9 +30,5 @@
 			<span class="font-semibold text-orange-400">{role}</span>.
 		</p>
 	</div>
-	<img
-		src="/src/assets/images/profile.jpeg"
-		class="h-64 w-64 rounded-full object-cover"
-		alt={name}
-	/>
+	<img src={ProfilePic} class="h-64 w-64 rounded-full object-cover" alt={name} />
 </header>
