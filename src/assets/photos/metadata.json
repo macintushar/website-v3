@@ -1,0 +1,42 @@
+{
+    "amsterdam-1": {
+        "title": "Amsterdam Zuid",
+        "location": "Amsterdam, Netherlands"
+    },
+    "amsterdam-2": {
+        "title": "Amsterdam City",
+        "location": "Amsterdam, Netherlands"
+    },
+    "hague-1": {
+        "title": "De Pier",
+        "location": "The Hague, Netherlands"
+    },
+    "melchsee-frutt-1": {
+        "title": "Melchsee-Frutt",
+        "location": "Melchsee-Frutt, Switzerland"
+    },
+    "melchsee-frutt-2": {
+        "title": "Swiss Alps",
+        "location": "Melchsee-Frutt, Switzerland"
+    },
+    "zurich-1": {
+        "title": "Lake Zurich",
+        "location": "Zurich, Switzerland"
+    },
+    "zurich-2": {
+        "title": "Zurich Old Town",
+        "location": "Zurich, Switzerland"
+    },
+    "berlin-1": {
+        "title": "Oberbaumbrücke",
+        "location": "Berlin, Germany"
+    },
+    "berlin-2": {
+        "title": "Potsdamer Platz",
+        "location": "Berlin, Germany"
+    },
+    "porsche-museum-1" : {
+        "title": "Porsche Museum",
+        "location": "Stuttgart, Germany"
+    }
+}
