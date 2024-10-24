@@ -16,7 +16,9 @@
 <a href={`/blog/${post.slug}`}>
 	<div class="group flex items-center justify-between">
 		<div class="flex items-center space-x-4">
-			<p class="text-sm italic text-gray-100/80">{date.format('MMM DD, YYYY')}</p>
+			<p class="text-sm italic text-gray-500 dark:text-gray-100/80">
+				{date.format('MMM DD, YYYY')}
+			</p>
 			<p>-</p>
 			<h1 class="group-hover:text-orange-400">{post.title}</h1>
 		</div>

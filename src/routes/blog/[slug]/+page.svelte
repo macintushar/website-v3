@@ -14,7 +14,7 @@
 <article class="mt-4">
 	<!-- Title -->
 	<hgroup class="flex flex-col gap-4">
-		<p class="text-sm italic text-gray-100/80">{formatDate(data.meta.date)}</p>
+		<p class="text-sm italic text-gray-500 dark:text-gray-100/80">{formatDate(data.meta.date)}</p>
 		<h1 class="text-2xl font-semibold">{data.meta.title}</h1>
 	</hgroup>
 
