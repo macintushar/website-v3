@@ -20,6 +20,27 @@
 
 <svelte:head>
 	<title>Photos | {config.title}</title>
+	<meta name="title" content="Photos | Tushar Selvakumar" />
+	<meta
+		name="description"
+		content="View Tushar Selvakumar's travel photography from cities like Amsterdam, Berlin, Zurich, and more."
+	/>
+	<meta
+		name="keywords"
+		content="Tushar Selvakumar, photography, travel, Amsterdam, Berlin, Zurich, portfolio"
+	/>
+	<meta property="og:title" content="Photos | Tushar Selvakumar" />
+	<meta
+		property="og:description"
+		content="Explore travel photos by Tushar Selvakumar from scenic destinations worldwide."
+	/>
+	<meta property="og:url" content="https://portfolio.macintushar.xyz/photos" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Photos | Tushar Selvakumar" />
+	<meta
+		name="twitter:description"
+		content="Travel photography from Europe and beyond by Tushar Selvakumar."
+	/>
 </svelte:head>
 
 <div class="columns-1 gap-8 sm:columns-2 md:columns-3">
