@@ -14,7 +14,9 @@
 
 {#snippet link(/** @type {string | undefined} */ url, /** @type {string} */ text)}
 	<a href={url} target="_blank">
-		<Button class="font-bold" variant="outline" size="sm">{text}</Button>
+		<Button class="font-bold" variant="outline" size="sm" aria-label={`Link to ${text}`}
+			>{text}</Button
+		>
 	</a>
 {/snippet}
 

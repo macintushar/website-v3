@@ -14,7 +14,7 @@
 	}
 </script>
 
-<button on:click={handleModeChange}>
+<button on:click={handleModeChange} aria-label="Dark/Light Mode Toggle">
 	{#if $mode === 'light'}<Moon class="h-6 w-6" />
 	{:else}
 		<Sun class="h-6 w-6 text-yellow-300" />
