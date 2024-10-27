@@ -8,6 +8,7 @@
 	);
 
 	import metadata from '../../assets/photos/metadata.json';
+	import { MapPin } from 'lucide-svelte';
 	const Metadata: MetadataType = metadata;
 
 	const images = Object.entries(imageModules).map(([path, module]) => ({
@@ -51,7 +52,8 @@
 				<h1 class="text-lg font-semibold">
 					{image.file_name ? Metadata[image.file_name].title : 'Nice Photo'}
 				</h1>
-				<p class="text-sm italic">
+				<p class="text-sm italic text-gray-100/60">
+					<MapPin class="inline h-3.5 w-3.5" />
 					{image.file_name ? Metadata[image.file_name].location : 'Somewhere, Earth'}
 				</p>
 			</div>
