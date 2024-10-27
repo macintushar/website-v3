@@ -1,6 +1,14 @@
 export const socialLinks = {
 	github: 'https://github.com/macintushar',
-	linkedin: ''
+	linkedin: 'https://www.linkedin.com/in/tushar-selvakumar/'
+};
+
+export const homePageData = {
+	organisation: 'AI Squared',
+	role: 'Software Engineer (SDE-1)',
+	tagline: 'Glorified Construction Worker for the Internet (read:front-end developer)',
+	name: 'Tushar',
+	tag: '@macintushar'
 };
 
 export type ProjectLink = {
