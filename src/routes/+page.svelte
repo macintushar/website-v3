@@ -14,9 +14,7 @@
 					👋 Hi, I'm {homePageData.name},
 				</h1>
 				<h1 class="text-lg">
-					commonly known as <Badge class="mx-2 text-sm hover:animate-pulse"
-						>{homePageData.tag}</Badge
-					> on the Internet.
+					commonly known as <Badge class="mx-1 text-sm">{homePageData.tag}</Badge> on the Internet.
 				</h1>
 			</div>
 			<p class="mb-2 text-lg">
