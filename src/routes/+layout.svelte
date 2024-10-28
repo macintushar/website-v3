@@ -23,9 +23,7 @@
 	<title>{config.title}</title>
 </svelte:head>
 
-<main
-	class="flex h-full min-h-screen w-full justify-center bg-gray-100 transition duration-300 dark:bg-gray-950"
->
+<main class="bg-background flex h-full min-h-screen w-full justify-center transition duration-300">
 	<div class="flex w-2/3 flex-col space-y-12">
 		<Navbar />
 		<div class="h-full">
@@ -34,9 +32,3 @@
 		<Footer />
 	</div>
 </main>
-
-<style lang="postcss">
-	:global(html) {
-		background-color: theme(colors.gray.100);
-	}
-</style>
