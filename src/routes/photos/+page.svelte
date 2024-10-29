@@ -35,7 +35,7 @@
 		property="og:description"
 		content="Explore travel photos by Tushar Selvakumar from scenic destinations worldwide."
 	/>
-	<meta property="og:url" content="https://portfolio.macintushar.xyz/photos" />
+	<meta property="og:url" content="https://macintushar.xyz/photos" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="Photos | Tushar Selvakumar" />
 	<meta

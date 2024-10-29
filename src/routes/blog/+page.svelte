@@ -21,7 +21,7 @@
 		property="og:description"
 		content="Insights and reflections on technology and development."
 	/>
-	<meta property="og:url" content="https://portfolio.macintushar.xyz/blog" />
+	<meta property="og:url" content="https://macintushar.xyz/blog" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="Blog | Tushar Selvakumar" />
 	<meta

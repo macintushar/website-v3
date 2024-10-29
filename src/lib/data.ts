@@ -1,3 +1,5 @@
+import type { NavbarLink, ProjectLink } from '$lib/types';
+
 export const socialLinks = {
 	github: 'https://github.com/macintushar',
 	linkedin: 'https://www.linkedin.com/in/tushar-selvakumar/'
@@ -8,20 +10,32 @@ export const homePageData = {
 	role: 'Software Engineer (SDE-1)',
 	tagline: 'Glorified Construction Worker for the Internet (read:front-end developer)',
 	name: 'Tushar',
-	tag: '@macintushar'
+	tag: '@macintushar',
+	additionalInfo: [
+		'I love travelling and eating food from different cultures. My favourites are probably Japanese and Italian (though this is always changing).',
+		" I also am a huge fan of tech so I'm always keeping up with the latest stuff from Apple, Google and many other companies."
+	]
 };
 
-export type ProjectLink = {
-	name: string;
-	url?: string;
-	github?: string;
-	description?: string;
-	ctaText?: string;
-	date?: string;
-	heroImage?: string;
-	tags?: string[];
-	isFeatured?: boolean;
-};
+export const navbarLinks: NavbarLink[] = [
+	{ icon: '💻', name: 'Projects', href: '/projects', isExternal: false },
+	{ icon: '✍️', name: 'Blog', href: '/blog', isExternal: false },
+	{
+		icon: '📷',
+		name: 'Photos',
+		href: '/photos',
+		isExternal: false,
+		hoverIcon: '📸',
+		hoverName: 'Photos'
+	},
+	{ icon: '✉️️', name: 'Contact', href: 'mailto:tusharkumar91111@gmail.com', isExternal: true },
+	{
+		icon: '📄',
+		name: 'Resume',
+		href: 'https://utfs.io/f/0d4f4098-25c4-4d6d-9200-4b49c61246c4-3olpfc.pdf',
+		isExternal: true
+	}
+];
 
 export const projects: ProjectLink[] = [
 	{
