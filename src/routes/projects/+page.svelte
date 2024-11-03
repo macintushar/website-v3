@@ -1,4 +1,5 @@
 <script>
+	import * as config from '$lib/config';
 	import { Badge } from '$lib/components/ui/badge';
 	import { Button } from '$lib/components/ui/button';
 	import {
@@ -19,6 +20,10 @@
 		>
 	</a>
 {/snippet}
+
+<svelte:head>
+	<title>Projects | {config.title}</title>
+</svelte:head>
 
 <div class="flex flex-col space-y-5">
 	<h1>

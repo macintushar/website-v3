@@ -1,8 +1,13 @@
 <script>
+	import * as config from '$lib/config';
 	import { Badge } from '$lib/components/ui/badge';
 	import ProfilePic from '/src/assets/images/profile.jpeg';
 	import { homePageData, projects } from '$lib/data';
 </script>
+
+<svelte:head>
+	<title>{config.title}</title>
+</svelte:head>
 
 <main class="flex flex-col space-y-8">
 	<div
