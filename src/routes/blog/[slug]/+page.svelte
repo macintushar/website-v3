@@ -21,7 +21,7 @@
 	<hr class="my-6" />
 
 	<!-- Post -->
-	<div>
+	<div class="prose dark:prose-invert w-full min-w-fit max-w-full">
 		<svelte:component this={data.content} />
 	</div>
 </article>
