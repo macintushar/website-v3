@@ -46,8 +46,10 @@ To view the key. You should copy the key printed in your Terminal, which starts 
 Or type in this URL: [https://github.com/settings/keys](https://github.com/settings/keys)
 
 And click on the “New SSH Key” button.
+![Add New SSH Key](/blog-assets/setting-up-ssh-on-ubuntu-unix/new-ssh-key.webp)
 
 Add your key and the Title for your new SSH Key.
+![Add New SSH Key](/blog-assets/setting-up-ssh-on-ubuntu-unix/add-ssh-key.webp)
 
 ## Step 3: Start Using GitHub
 
