@@ -1,38 +1,23 @@
-# create-svelte
+# Website V3
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This is a [SvelteKit](https://svelte.dev) project. It uses TailwindCSS and MDSveX for styling.
 
-## Creating a project
+You can check it out on [my website](https://macintushar.xyz).
 
-If you're seeing this, you've probably already done this step. Congrats!
+It is deployed on Vercel and uses Vercel analytics as well to get more insights on how the site is being accessed.
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Getting Started
 
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+First, install the dependencies:
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+bun install
 ```
 
-## Building
-
-To create a production version of your app:
+Then, run the development server:
 
 ```bash
-npm run build
+bun run dev
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
