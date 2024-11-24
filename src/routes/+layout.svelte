@@ -20,10 +20,10 @@
 	<title>{config.title}</title>
 </svelte:head>
 
-<main class="bg-background flex h-full min-h-screen w-full justify-center transition duration-300">
-	<div class="flex w-2/3 flex-col space-y-12">
+<main class="flex h-full min-h-screen w-full justify-center bg-background transition duration-300">
+	<div class="flex w-4/5 flex-col space-y-12 sm:w-2/3 sm:px-0">
 		<Navbar />
-		<div class="h-full">
+		<div class="h-full w-full">
 			<slot />
 		</div>
 		<Footer />

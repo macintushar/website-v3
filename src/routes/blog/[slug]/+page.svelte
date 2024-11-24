@@ -13,15 +13,15 @@
 
 <article class="mt-4">
 	<!-- Title -->
-	<hgroup class="flex flex-col gap-4">
+	<hgroup class="flex w-full flex-col gap-4">
 		<p class="text-sm italic text-gray-500 dark:text-gray-100/80">{formatDate(data.meta.date)}</p>
 		<h1 class="text-2xl font-semibold">{data.meta.title}</h1>
 	</hgroup>
 
-	<hr class="my-6" />
+	<hr class="my-6 w-full" />
 
 	<!-- Post -->
-	<div class="prose dark:prose-invert w-full min-w-fit max-w-full">
-		<svelte:component this={data.content} />
+	<div class="prose w-full max-w-none dark:prose-invert">
+		<svelte:component this={data.content} class="w-full" />
 	</div>
 </article>

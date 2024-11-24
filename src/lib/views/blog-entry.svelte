@@ -14,8 +14,10 @@
 </script>
 
 <a href={`/blog/${post.slug}`}>
-	<div class="group flex items-center justify-between">
-		<div class="flex items-center space-x-4">
+	<div class="group flex flex-col items-center sm:justify-between">
+		<div
+			class="flex flex-col items-center space-x-4 text-pretty text-center sm:flex-row sm:text-start"
+		>
 			<p class="text-sm italic text-gray-500 dark:text-gray-100/80">
 				{date.format('MMM DD, YYYY')}
 			</p>
