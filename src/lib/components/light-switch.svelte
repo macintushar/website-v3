@@ -3,7 +3,6 @@
 	import Moon from 'lucide-svelte/icons/moon';
 
 	import { setMode, mode } from 'mode-watcher';
-	import { Icon } from 'lucide-svelte';
 
 	function handleModeChange() {
 		if ($mode === 'light') {

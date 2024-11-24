@@ -5,6 +5,7 @@ const config: Config = {
 	darkMode: ['class'],
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	safelist: ['dark'],
+	// eslint-disable-next-line @typescript-eslint/no-require-imports
 	plugins: [require('@tailwindcss/typography')],
 	theme: {
 		container: {

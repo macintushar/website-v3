@@ -1,5 +1,5 @@
 <script>
-	import { Github, Linkedin, X } from 'lucide-svelte';
+	import { Github, Linkedin } from 'lucide-svelte';
 	import { socialLinks } from '$lib/data';
 </script>
 

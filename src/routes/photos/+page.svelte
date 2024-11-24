@@ -13,7 +13,7 @@
 
 	const images = Object.entries(imageModules).map(([path, module]) => ({
 		path,
-		// @ts-ignore
+		// @ts-expect-error this is okay but ts doesn't know
 		src: module.default,
 		file_name: path.split('/').pop()?.split('.')[0]
 	}));
