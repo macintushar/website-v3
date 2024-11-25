@@ -14,7 +14,7 @@
 </script>
 
 <a href={`/blog/${post.slug}`}>
-	<div class="group flex flex-col items-center sm:justify-between">
+	<div class="group flex flex-col items-center sm:flex-row sm:justify-between">
 		<div
 			class="flex flex-col items-center space-x-4 text-pretty text-center sm:flex-row sm:text-start"
 		>
