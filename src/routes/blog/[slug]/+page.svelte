@@ -11,7 +11,7 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<article class="mt-4">
+<article class="mt-4 w-full">
 	<!-- Title -->
 	<hgroup class="flex flex-col gap-4">
 		<p class="text-sm italic text-gray-500 dark:text-gray-100/80">{formatDate(data.meta.date)}</p>
@@ -21,7 +21,7 @@
 	<hr class="my-6" />
 
 	<!-- Post -->
-	<div class="prose dark:prose-invert w-full min-w-fit max-w-full">
+	<div class="prose max-w-fit dark:prose-invert">
 		<svelte:component this={data.content} />
 	</div>
 </article>

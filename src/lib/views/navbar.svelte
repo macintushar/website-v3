@@ -31,8 +31,8 @@
 		<Ramen />
 		<h1 class="text-4xl font-bold">Tushar Selvakumar</h1>
 	</a>
-	<div class="flex w-full justify-between">
-		<nav class="flex flex-wrap gap-4 font-medium">
+	<div class="flex w-full flex-col items-end justify-between sm:flex-row sm:items-center">
+		<nav class="flex w-fit flex-wrap justify-between gap-4 font-medium">
 			{#each navbarLinks as link}
 				{@render navItem(link)}
 			{/each}
