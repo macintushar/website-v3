@@ -7,6 +7,19 @@
 
 <svelte:head>
 	<title>{config.title}</title>
+
+	<meta property="og:title" content="Tushar Selvakumar – Front-End Developer | Portfolio" />
+	<meta
+		property="og:description"
+		content="Explore the portfolio of Tushar Selvakumar, including projects, blogs, and photography."
+	/>
+	<meta property="og:url" content="https://macintushar.xyz/" />
+
+	<meta name="twitter:title" content="Tushar Selvakumar – Front-End Developer | Portfolio" />
+	<meta
+		name="twitter:description"
+		content="Discover Tushar's projects and insights as a front-end developer and as a Software Engineer."
+	/>
 </svelte:head>
 
 <main class="flex flex-col space-y-8">
