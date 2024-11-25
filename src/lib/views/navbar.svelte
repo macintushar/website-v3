@@ -27,14 +27,11 @@
 {/snippet}
 
 <header class="mt-8 flex flex-col items-baseline space-y-4">
-	<a
-		href="/"
-		class="flex flex-col items-center gap-3 text-center transition-colors hover:text-orange-400 sm:flex-row sm:text-start"
-	>
+	<a href="/" class="flex items-center gap-3 transition-colors hover:text-orange-400">
 		<Ramen />
 		<h1 class="text-4xl font-bold">Tushar Selvakumar</h1>
 	</a>
-	<div class="flex w-full flex-col justify-between sm:flex-row">
+	<div class="flex w-full justify-between">
 		<nav class="flex flex-wrap gap-4 font-medium">
 			{#each navbarLinks as link}
 				{@render navItem(link)}

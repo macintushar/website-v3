@@ -31,7 +31,7 @@
 </svelte:head>
 
 <section>
-	<ul class="posts flex flex-col gap-6 text-black dark:text-white sm:gap-2">
+	<ul class="posts flex flex-col gap-2 text-black dark:text-white">
 		{#each data.posts as post}
 			<BlogEntry {post} />
 		{/each}
