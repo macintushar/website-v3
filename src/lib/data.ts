@@ -32,7 +32,7 @@ export const navbarLinks: NavbarLink[] = [
 	{
 		icon: '📄',
 		name: 'Resume',
-		href: 'https://utfs.io/f/y7NUdLmtD0RxDkLkMNXl8R74iuVyZ2hf35YSKmvFMXzkjUB1',
+		href: 'https://utfs.io/f/MxNtnUD1KQruzNt4ILGyTg9XLRJmdlCAnkixo7hMZPOU4KQF',
 		isExternal: true
 	}
 ];
