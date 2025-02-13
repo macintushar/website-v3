@@ -18,6 +18,7 @@
 
 <svelte:head>
 	<title>{config.title}</title>
+	<meta name="google-site-verification" content="o9lr1Nf-ex7J8PExLJ8Xr2AbcWlbYyelyApLl1nNsuo" />
 </svelte:head>
 
 <main class="flex h-full min-h-screen w-full justify-center bg-background transition duration-300">
