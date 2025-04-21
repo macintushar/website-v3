@@ -12,6 +12,7 @@
 
 	import '../app.css';
 	import Footer from '$lib/views/footer.svelte';
+	import { dev } from '$app/environment';
 </script>
 
 <ModeWatcher />
@@ -19,6 +20,13 @@
 <svelte:head>
 	<title>{config.title}</title>
 	<meta name="google-site-verification" content="o9lr1Nf-ex7J8PExLJ8Xr2AbcWlbYyelyApLl1nNsuo" />
+	{#if !dev}
+		<script
+			defer
+			src="https://cloud.umami.is/script.js"
+			data-website-id="ce440ee4-d5e7-4de6-aa1a-10168543f054"
+		></script>
+	{/if}
 </svelte:head>
 
 <main class="flex h-full min-h-screen w-full justify-center bg-background transition duration-300">
