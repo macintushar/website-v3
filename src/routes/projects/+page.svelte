@@ -11,6 +11,7 @@
 		CardFooter
 	} from '$lib/components/ui/card';
 	import { projects, socialLinks } from '$lib/data';
+	import { getStargazersCount } from '$lib/utils';
 </script>
 
 {#snippet link(/** @type {string | undefined} */ url, /** @type {string} */ text)}
@@ -61,10 +62,19 @@
 					</CardDescription>
 				</CardContent>
 				<CardFooter class="flex flex-row-reverse">
-					<div class="flex space-x-4">
+					<div class="flex items-center justify-between space-x-4">
 						{@render link(project.github, 'GitHub')}
 						{#if project.url}
 							{@render link(project.url, project.ctaText || 'Demo')}
+						{/if}
+						{#if project.repo}
+							{#await getStargazersCount(project.repo)}
+								<span>Loading stars...</span>
+							{:then count}
+								<h1 class="font-bold">
+									⭐ {count}
+								</h1>
+							{/await}
 						{/if}
 					</div>
 				</CardFooter>

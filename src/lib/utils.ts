@@ -63,3 +63,9 @@ export function formatDate(date: string, dateStyle: DateStyle = 'medium', locale
 	const dateFormatter = new Intl.DateTimeFormat(locales, { dateStyle });
 	return dateFormatter.format(dateToFormat);
 }
+
+export async function getStargazersCount(repo: string, username = 'macintushar') {
+	const response = await fetch(`https://api.github.com/repos/${username}/${repo}`);
+	const data = await response.json();
+	return data.stargazers_count;
+}

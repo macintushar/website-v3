@@ -42,6 +42,7 @@ export const projects: ProjectLink[] = [
 		name: 'Draw',
 		url: 'https://draw.macintushar.xyz',
 		github: 'https://github.com/macintushar/draw',
+		repo: 'draw',
 		description:
 			'The digital drawing tool that enables you to create, edit, and share your drawings across all your devices.',
 		date: '2024',

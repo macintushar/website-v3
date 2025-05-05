@@ -32,5 +32,6 @@ export type ProjectLink = {
 	date?: string;
 	heroImage?: string;
 	tags?: string[];
+	repo?: string;
 	isFeatured?: boolean;
 };
