@@ -28,7 +28,7 @@ export const navbarLinks: NavbarLink[] = [
 		hoverIcon: '📸',
 		hoverName: 'Photos'
 	},
-	{ icon: '✉️️', name: 'Contact', href: 'mailto:tusharkumar91111@gmail.com', isExternal: true },
+	{ icon: '✉️️', name: 'Contact', href: 'mailto:hi@macintushar.xyz', isExternal: true },
 	{
 		icon: '📄',
 		name: 'Resume',
