@@ -1,0 +1,1 @@
+export const RESUME_URL = import.meta.env.RESUME_URL ?? "https://4m1wldtwrj.ufs.sh/f/MxNtnUD1KQruLX1pik5uhUSsHob0zPnG42ZxcVpJmry5BOWe"
