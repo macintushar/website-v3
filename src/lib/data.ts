@@ -1,5 +1,7 @@
 import type { NavbarLink, ProjectLink } from '$lib/types';
 
+export const RESUME_URL = "https://4m1wldtwrj.ufs.sh/f/MxNtnUD1KQruLX1pik5uhUSsHob0zPnG42ZxcVpJmry5BOWe"
+
 export const socialLinks = {
 	github: 'https://github.com/macintushar',
 	linkedin: 'https://www.linkedin.com/in/tushar-selvakumar/'
@@ -32,7 +34,7 @@ export const navbarLinks: NavbarLink[] = [
 	{
 		icon: '📄',
 		name: 'Resume',
-		href: 'https://4m1wldtwrj.ufs.sh/f/MxNtnUD1KQru54JAV9StJeQgdi4FcR7jYKO5PhxoUrpwM9XE',
+		href: RESUME_URL,
 		isExternal: true
 	}
 ];
