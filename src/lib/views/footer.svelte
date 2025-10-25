@@ -8,14 +8,14 @@
 	const displayYear = currentYear > startYear ? `${startYear} - ${currentYear}` : startYear;
 </script>
 
-<footer class="flex flex-col justify-center space-y-2 pb-3">
-	<h1 class="text-md w-full text-center font-medium">Tushar Selvakumar © {displayYear}</h1>
-	<div class="flex w-full justify-center space-x-3">
-		<a href={socialLinks.github} target="_blank" aria-label="Macintushar GitHub">
-			<Github class="h-5 w-5 dark:text-white" />
+<footer class="flex w-full flex-col items-center justify-between gap-4 border-t border-border py-6 text-sm text-muted-foreground sm:flex-row sm:gap-0">
+	<p class="text-center sm:text-left">© {displayYear} Tushar Selvakumar</p>
+	<div class="flex items-center gap-4">
+		<a href={socialLinks.github} target="_blank" aria-label="GitHub" class="transition-colors hover:text-foreground">
+			<Github class="h-5 w-5" />
 		</a>
-		<a href={socialLinks.linkedin} target="_blank" aria-label="Tushar Selvakumar LinkedIn">
-			<Linkedin class="h-5 w-5 dark:text-white" />
+		<a href={socialLinks.linkedin} target="_blank" aria-label="LinkedIn" class="transition-colors hover:text-foreground">
+			<Linkedin class="h-5 w-5" />
 		</a>
 	</div>
 </footer>
