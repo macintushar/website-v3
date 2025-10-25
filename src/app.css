@@ -80,6 +80,10 @@
 @layer base {
 	body {
 		@apply bg-background text-foreground;
-		font-family: 'Geist Sans', sans-serif;
+		font-family: 'Instrument Sans', sans-serif;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Instrument Serif', serif;
 	}
 }
