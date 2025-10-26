@@ -14,19 +14,20 @@
 </script>
 
 <a href={`/blog/${post.slug}`}>
-	<div class="group flex flex-col items-center sm:flex-row sm:justify-between">
-		<div
-			class="flex flex-col items-center space-x-4 text-pretty text-center sm:flex-row sm:text-start"
-		>
-			<p class="text-sm italic text-gray-500 dark:text-gray-100/80">
-				{date.format('MMM DD, YYYY')}
-			</p>
-			<p>-</p>
-			<h1 class="group-hover:text-orange-400">{post.title}</h1>
+	<div class="group flex flex-col gap-3 rounded-lg border border-border p-4 transition-colors hover:bg-muted/50 sm:p-5">
+		<div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+			<div class="flex flex-col gap-2">
+				<p class="text-sm text-muted-foreground">
+					{date.format('MMM DD, YYYY')}
+				</p>
+				<h2 class="text-lg font-semibold transition-colors group-hover:text-foreground sm:text-xl">
+					{post.title}
+				</h2>
+			</div>
 		</div>
-		<div class="flex gap-2">
+		<div class="flex flex-wrap gap-2">
 			{#each categories as category}
-				<Badge variant="secondary">{category}</Badge>
+				<Badge variant="secondary" class="text-xs">{category}</Badge>
 			{/each}
 		</div>
 	</div>

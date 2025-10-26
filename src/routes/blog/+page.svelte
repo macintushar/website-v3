@@ -30,10 +30,19 @@
 	/>
 </svelte:head>
 
-<section>
-	<ul class="posts flex flex-col gap-2 text-black dark:text-white">
+<section class="flex flex-col gap-6">
+	<div class="flex flex-col gap-2">
+		<h1 class="text-3xl font-bold sm:text-4xl">Blog</h1>
+		<p class="text-muted-foreground">
+			Thoughts on technology, development, and everything in between.
+		</p>
+	</div>
+	
+	<ul class="flex flex-col gap-4">
 		{#each data.posts as post}
-			<BlogEntry {post} />
+			<li>
+				<BlogEntry {post} />
+			</li>
 		{/each}
 	</ul>
 </section>
