@@ -40,7 +40,7 @@ export const navbarLinks: NavbarLink[] = [
 export const projects: ProjectLink[] = [
 	{
 		name: 'Curiositi',
-		url: 'https://docs.curiositi.xyz',
+		url: 'https://curiositi.xyz',
 		github: 'https://github.com/macintushar/curiositi',
 		repo: 'curiositi',
 		description:
@@ -49,19 +49,6 @@ export const projects: ProjectLink[] = [
 		heroImage: 'https://opengraph.githubassets.com/1/macintushar/curiositi',
 		tags: ['Next.js', 'Hono', 'PostgreSQL', 'RAG', 'AI', 'TypeScript'],
 		ctaText: 'View Docs',
-		isFeatured: true
-	},
-	{
-		name: 'Hawk',
-		url: 'https://hawk.macintushar.xyz',
-		github: 'https://github.com/macintushar/hawk',
-		repo: 'hawk',
-		description:
-			'Open-source, self-hosted monitoring platform. Track uptime and performance for your services, get alerted on incidents, and publish beautiful public status pages.',
-		date: '2025',
-		heroImage: 'https://opengraph.githubassets.com/1/macintushar/hawk',
-		tags: ['Next.js', 'tRPC', 'Drizzle', 'Turso', 'TypeScript'],
-		ctaText: 'Try Demo',
 		isFeatured: true
 	},
 	{
@@ -76,6 +63,19 @@ export const projects: ProjectLink[] = [
 		tags: ['React', 'TypeScript', 'Excalidraw', 'Supabase'],
 		ctaText: 'Try Draw',
 		isFeatured: true
+	},
+	{
+		name: 'Hawk',
+		url: 'https://hawk.macintushar.xyz',
+		github: 'https://github.com/macintushar/hawk',
+		repo: 'hawk',
+		description:
+			'Open-source, self-hosted monitoring platform. Track uptime and performance for your services, get alerted on incidents, and publish beautiful public status pages.',
+		date: '2025',
+		heroImage: 'https://opengraph.githubassets.com/1/macintushar/hawk',
+		tags: ['Next.js', 'tRPC', 'Drizzle', 'Turso', 'TypeScript'],
+		ctaText: 'Try Demo',
+		isFeatured: false
 	},
 	{
 		name: 'SPKR - Voice Keyboard',

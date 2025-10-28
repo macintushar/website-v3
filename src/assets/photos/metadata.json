@@ -38,5 +38,41 @@
 	"porsche-museum-1": {
 		"title": "Porsche Museum",
 		"location": "Stuttgart, Germany"
+	},
+	"nyc-1": {
+		"title": "Downtown Manhattan",
+		"location": "New York City, USA"
+	},
+	"nyc-2": {
+		"title": "Empire State Building",
+		"location": "New York City, USA"
+	},
+	"nyc-3": {
+		"title": "Grand Central Terminal",
+		"location": "New York City, USA"
+	},
+	"statue-of-liberty": {
+		"title": "Statue of Liberty",
+		"location": "New York City, USA"
+	},
+	"sf-1": {
+		"title": "Japanese Tea Garden",
+		"location": "San Francisco, USA"
+	},
+	"sf-2": {
+		"title": "Golden Gate Bridge",
+		"location": "San Francisco, USA"
+	},
+	"vegas-1": {
+		"title": "Las Vegas",
+		"location": "Las Vegas, USA"
+	},
+	"hkg-1": {
+		"title": "Hong Kong",
+		"location": "Hong Kong"
+	},
+	"carmel-1": {
+		"title": "Carmel-by-the-Sea",
+		"location": "Carmel-by-the-Sea, USA"
 	}
 }

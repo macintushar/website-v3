@@ -27,7 +27,7 @@
 </svelte:head>
 
 <div class="flex flex-col space-y-5">
-	<h1>
+	<h1 class="text-2xl">
 		Below is a list of some of the fun projects I've worked on. You can check out my <a
 			class="font-semibold text-orange-500 underline"
 			href={socialLinks.github}>GitHub</a
@@ -71,9 +71,11 @@
 							{#await getStargazersCount(project.repo)}
 								<span>Loading stars...</span>
 							{:then count}
-								<h1 class="font-bold">
-									⭐ {count}
-								</h1>
+								<a href={project.github} target="_blank" aria-label="View repository" rel="noopener noreferrer">
+									<h1 class="font-bold">
+										⭐ {count}
+									</h1>
+								</a>
 							{/await}
 						{/if}
 					</div>

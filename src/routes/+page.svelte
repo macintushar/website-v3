@@ -32,17 +32,17 @@
 				<h1 class="text-2xl font-semibold sm:text-3xl">
 					👋 Hi, I'm {homePageData.name},
 				</h1>
-				<h1 class="text-base sm:text-lg">
+				<h1 class="text-xl">
 					commonly known as <Badge class="mx-1 bg-blue-500 text-sm text-white dark:bg-blue-950"
 						>{homePageData.tag}</Badge
 					> on the Internet.
 				</h1>
 			</div>
-			<p class="text-base sm:text-lg">
+			<p class="text-xl">
 				I'm a
 				<span class="font-semibold text-orange-400">{homePageData.tagline}</span>,
 			</p>
-			<p class="text-base sm:text-lg">
+			<p class="text-xl">
 				currently working at <span class="font-semibold text-orange-400"
 					>{homePageData.organisation}</span
 				>
@@ -101,9 +101,10 @@
 						{#if project.tags && project.tags.length > 0}
 							<div class="flex flex-wrap gap-2">
 								{#each project.tags.slice(0, 3) as tag}
-									<span class="rounded-full bg-muted px-2.5 py-1 text-xs font-medium">
+									<!-- <span class="rounded-full bg-muted px-2.5 py-1 text-xs font-medium">
 										{tag}
-									</span>
+									</span> -->
+									<Badge variant="outline">{tag}</Badge>
 								{/each}
 								{#if project.tags.length > 3}
 									<span class="rounded-full bg-muted px-2.5 py-1 text-xs font-medium text-muted-foreground">
