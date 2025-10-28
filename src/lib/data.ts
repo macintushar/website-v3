@@ -39,6 +39,32 @@ export const navbarLinks: NavbarLink[] = [
 
 export const projects: ProjectLink[] = [
 	{
+		name: 'Curiositi',
+		url: 'https://docs.curiositi.xyz',
+		github: 'https://github.com/macintushar/curiositi',
+		repo: 'curiositi',
+		description:
+			'Open-source AI knowledge workspace. Upload documents, organize them into spaces, and chat with an agent that answers using your knowledge and the web.',
+		date: '2025',
+		heroImage: 'https://opengraph.githubassets.com/1/macintushar/curiositi',
+		tags: ['Next.js', 'Hono', 'PostgreSQL', 'RAG', 'AI', 'TypeScript'],
+		ctaText: 'View Docs',
+		isFeatured: true
+	},
+	{
+		name: 'Hawk',
+		url: 'https://hawk.macintushar.xyz',
+		github: 'https://github.com/macintushar/hawk',
+		repo: 'hawk',
+		description:
+			'Open-source, self-hosted monitoring platform. Track uptime and performance for your services, get alerted on incidents, and publish beautiful public status pages.',
+		date: '2025',
+		heroImage: 'https://opengraph.githubassets.com/1/macintushar/hawk',
+		tags: ['Next.js', 'tRPC', 'Drizzle', 'Turso', 'TypeScript'],
+		ctaText: 'Try Demo',
+		isFeatured: true
+	},
+	{
 		name: 'Draw',
 		url: 'https://draw.macintushar.xyz',
 		github: 'https://github.com/macintushar/draw',

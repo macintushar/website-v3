@@ -3,12 +3,13 @@
 	import Navbar from '$lib/views/navbar.svelte';
 	import { ModeWatcher } from 'mode-watcher';
 
-	import '@fontsource/geist-sans/300.css';
-	import '@fontsource/geist-sans/400.css';
-	import '@fontsource/geist-sans/500.css';
-	import '@fontsource/geist-sans/600.css';
-	import '@fontsource/geist-sans/700.css';
-	import '@fontsource/geist-sans/800.css';
+	import '@fontsource/instrument-sans/400.css';
+	import '@fontsource/instrument-sans/500.css';
+	import '@fontsource/instrument-sans/600.css';
+	import '@fontsource/instrument-sans/700.css';
+	
+	import '@fontsource/instrument-serif/400.css';
+	import '@fontsource/instrument-serif/400-italic.css';
 
 	import '../app.css';
 	import Footer from '$lib/views/footer.svelte';
@@ -30,7 +31,7 @@
 </svelte:head>
 
 <main class="flex h-full min-h-screen w-full justify-center bg-background transition duration-300">
-	<div class="flex w-2/3 flex-col space-y-12">
+	<div class="flex w-full max-w-6xl flex-col space-y-12 px-4 sm:w-11/12 sm:px-6 md:w-5/6 lg:w-3/4 xl:w-2/3">
 		<Navbar />
 		<div class="h-full">
 			<slot />
