@@ -28,7 +28,7 @@ cd ~/.ssh
 After navigating to the .ssh folder, use the ssh-keygen command to generate your SSH Key.
 
 ```bash
-ssh-keygen -o -t rsa “[YOUR_EMAIL_HERE]”
+ssh-keygen -t ed25519 -C “[YOUR_EMAIL_HERE]”
 ```
 
 Press the enter key to save the file name and leave the passphrase empty. After you do this, you’ll see some random art the command generates.
