@@ -1,6 +1,8 @@
 <script lang="ts">
+	import Button from '$lib/components/ui/button/button.svelte';
 	import * as config from '$lib/config';
 	import BlogEntry from '$lib/views/blog-entry.svelte';
+	import { IconRss } from '@tabler/icons-svelte-runes';
 
 	export let data;
 </script>
@@ -32,12 +34,24 @@
 
 <section class="flex flex-col gap-6">
 	<div class="flex flex-col gap-2">
-		<h1 class="text-3xl font-bold sm:text-4xl">Blog</h1>
+		<div class="flex flex-row items-center justify-between">
+			<h1 class="text-3xl font-bold sm:text-4xl">Blog</h1>
+			<a href="/atom.xml" target="_blank" rel="noopener noreferrer">
+				<Button
+					size="sm"
+					variant="outline"
+					class="flex h-fit items-center gap-2 px-2 py-1.5 text-xs hover:cursor-pointer"
+				>
+					<IconRss class="size-3 text-orange-400" />
+					RSS feed
+				</Button>
+			</a>
+		</div>
 		<p class="text-muted-foreground">
 			Thoughts on technology, development, and everything in between.
 		</p>
 	</div>
-	
+
 	<ul class="flex flex-col gap-4">
 		{#each data.posts as post}
 			<li>

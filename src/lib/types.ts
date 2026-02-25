@@ -15,7 +15,6 @@ export type MetadataType = {
 };
 
 export type NavbarLink = {
-	icon: string;
 	name: string;
 	href: string;
 	isExternal: boolean;

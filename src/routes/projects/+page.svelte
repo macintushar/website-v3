@@ -27,19 +27,26 @@
 </svelte:head>
 
 <div class="flex flex-col space-y-5">
-	<h1 class="text-2xl">
-		Below is a list of some of the fun projects I've worked on. You can check out my <a
-			class="font-semibold text-orange-500 underline"
-			href={socialLinks.github}>GitHub</a
-		> for more.
-	</h1>
+	<div class="flex flex-col gap-2">
+		<h1 class="text-3xl font-bold sm:text-4xl">Projects</h1>
+		<p class="text-muted-foreground">
+			Here's some of the fun projects I've worked on. More on my <a
+				class="text-primary font-semibold underline"
+				href={socialLinks.github}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				GitHub</a
+			>.
+		</p>
+	</div>
 	{#each projects as project}
 		<Card>
 			<div class="w-full">
 				<CardHeader class="flex flex-col space-y-5">
 					{#if project.isFeatured}
 						{#if project.heroImage && project.heroImage !== ''}
-							<img src={project.heroImage} alt={project.name} />
+							<img class="rounded-md" src={project.heroImage} alt={project.name} />
 						{/if}
 						{#if project.tags}
 							<div class="flex flex-wrap gap-2">
@@ -51,10 +58,10 @@
 					{/if}
 				</CardHeader>
 				<CardContent>
-					<CardTitle class="flex gap-1">
-						<h1>{project.name}</h1>
-						<h2 class="text-sm font-medium text-orange-400">
-							/ {project.date || '1970'}
+					<CardTitle class="flex items-center gap-1">
+						<h1 class="text-2xl">{project.name}</h1>
+						<h2 class="text-primary text-base font-medium">
+							/ {project.date || new Date().getFullYear()}
 						</h2>
 					</CardTitle>
 					<CardDescription>
@@ -71,7 +78,12 @@
 							{#await getStargazersCount(project.repo)}
 								<span>Loading stars...</span>
 							{:then count}
-								<a href={project.github} target="_blank" aria-label="View repository" rel="noopener noreferrer">
+								<a
+									href={project.github}
+									target="_blank"
+									aria-label="View repository"
+									rel="noopener noreferrer"
+								>
 									<h1 class="font-bold">
 										⭐ {count}
 									</h1>

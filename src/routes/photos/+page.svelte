@@ -24,11 +24,11 @@
 	<meta name="title" content="Photos | Tushar Selvakumar" />
 	<meta
 		name="description"
-		content="View Tushar Selvakumar's travel photography from cities like Amsterdam, Berlin, Zurich, and more."
+		content="View Tushar Selvakumar's travel photography from cities like Amsterdam, Berlin, NYC, Zurich, and more."
 	/>
 	<meta
 		name="keywords"
-		content="Tushar Selvakumar, photography, travel, Amsterdam, Berlin, Zurich, portfolio"
+		content="Tushar Selvakumar, photography, travel, Amsterdam, Berlin, Zurich, New York, portfolio"
 	/>
 	<meta property="og:title" content="Photos | Tushar Selvakumar" />
 	<meta
@@ -49,10 +49,10 @@
 		<div class="mb-8 break-inside-avoid">
 			<enhanced:img class="h-full w-full rounded-lg" src={image.src} alt={image.file_name} />
 			<div class="flex flex-col pt-2 text-center">
-				<h1 class="text-lg font-semibold">
+				<h1 class="text-xl font-semibold tracking-wide">
 					{image.file_name ? Metadata[image.file_name].title : 'Nice Photo'}
 				</h1>
-				<p class="text-sm italic text-gray-600 dark:text-gray-100/60">
+				<p class="text-muted-foreground text-xs">
 					<MapPin class="inline h-3.5 w-3.5" />
 					{image.file_name ? Metadata[image.file_name].location : 'Somewhere, Earth'}
 				</p>

@@ -3,4 +3,4 @@
 	export let alt: string;
 </script>
 
-<img {src} {alt} loading="lazy" />
+<enhanced:img {src} {alt} loading="lazy"></enhanced:img>

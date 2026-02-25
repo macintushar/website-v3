@@ -18,19 +18,17 @@ export const homePageData = {
 };
 
 export const navbarLinks: NavbarLink[] = [
-	{ icon: '💻', name: 'Projects', href: '/projects', isExternal: false },
-	{ icon: '✍️', name: 'Blog', href: '/blog', isExternal: false },
+	{ name: 'Projects', href: '/projects', isExternal: false },
+	{ name: 'Blog', href: '/blog', isExternal: false },
 	{
-		icon: '📷',
 		name: 'Photos',
 		href: '/photos',
 		isExternal: false,
 		hoverIcon: '📸',
 		hoverName: 'Photos'
 	},
-	{ icon: '✉️️', name: 'Contact', href: 'mailto:hi@macintushar.xyz', isExternal: true },
+	{ name: 'Contact', href: 'mailto:hi@macintushar.xyz', isExternal: true },
 	{
-		icon: '📄',
 		name: 'Resume',
 		href: '/resume',
 		isExternal: true
@@ -47,8 +45,8 @@ export const projects: ProjectLink[] = [
 			'Open-source AI knowledge workspace. Upload documents, organize them into spaces, and chat with an agent that answers using your knowledge and the web.',
 		date: '2025',
 		heroImage: 'https://opengraph.githubassets.com/1/macintushar/curiositi',
-		tags: ['Next.js', 'Hono', 'PostgreSQL', 'RAG', 'AI', 'TypeScript'],
-		ctaText: 'View Docs',
+		tags: ['Tanstack Start', 'Astro', 'Hono', 'PostgreSQL', 'RAG', 'AI', 'TypeScript'],
+		ctaText: 'Try Curiositi',
 		isFeatured: true
 	},
 	{
@@ -60,7 +58,7 @@ export const projects: ProjectLink[] = [
 			'The digital drawing tool that enables you to create, edit, and share your drawings across all your devices.',
 		date: '2024',
 		heroImage: 'https://draw.macintushar.xyz/draw-preview-img.png',
-		tags: ['React', 'TypeScript', 'Excalidraw', 'Supabase'],
+		tags: ['React', 'Supabase', 'Excalidraw'],
 		ctaText: 'Try Draw',
 		isFeatured: true
 	},

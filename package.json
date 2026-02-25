@@ -12,6 +12,8 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
+		"@internationalized/date": "^3.10.0",
+		"@lucide/svelte": "^0.561.0",
 		"@sveltejs/adapter-auto": "^3.3.1",
 		"@sveltejs/adapter-vercel": "^5.5.3",
 		"@sveltejs/enhanced-img": "^0.3.10",
@@ -22,7 +24,7 @@
 		"@types/eslint": "^9.6.1",
 		"@types/node": "^22.10.7",
 		"autoprefixer": "^10.4.20",
-		"bits-ui": "^0.21.16",
+		"bits-ui": "^2.14.4",
 		"clsx": "^2.1.1",
 		"embla-carousel-svelte": "^8.5.2",
 		"eslint": "^9.18.0",
@@ -47,8 +49,11 @@
 		"@fontsource/geist-sans": "^5.1.0",
 		"@fontsource/instrument-sans": "^5.2.8",
 		"@fontsource/instrument-serif": "^5.2.8",
+		"@tabler/icons-svelte-runes": "^3.37.1",
 		"@vercel/analytics": "^1.4.1",
 		"@vercel/speed-insights": "^1.1.0",
+		"baseline-browser-mapping": "^2.10.0",
+		"caniuse-lite": "^1.0.30001774",
 		"dayjs": "^1.11.13",
 		"lucide-svelte": "^0.453.0",
 		"mode-watcher": "^0.4.1"

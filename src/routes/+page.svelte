@@ -1,7 +1,6 @@
 <script>
 	import * as config from '$lib/config';
 	import { Badge } from '$lib/components/ui/badge';
-	import ProfilePic from '/src/assets/images/profile.jpeg';
 	import { homePageData, projects } from '$lib/data';
 	import { ArrowUpRight, ExternalLink } from 'lucide-svelte';
 </script>
@@ -24,92 +23,84 @@
 </svelte:head>
 
 <main class="flex flex-col space-y-12 sm:space-y-16">
-	<div
-		class="flex flex-col-reverse items-center justify-between gap-6 sm:flex-row sm:items-start sm:gap-8"
-	>
-		<div class="flex flex-col gap-3 text-center sm:gap-4 sm:text-left">
+	<div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
+		<div class="col-span-2 flex flex-col gap-3 text-center sm:gap-4 sm:text-left">
 			<div class="flex flex-col gap-2 sm:gap-3">
 				<h1 class="text-2xl font-semibold sm:text-3xl">
-					👋 Hi, I'm {homePageData.name},
+					👋 Hi, I'm <i>{homePageData.name}</i>,
 				</h1>
-				<h1 class="text-xl">
-					commonly known as <Badge class="mx-1 bg-blue-500 text-sm text-white dark:bg-blue-950"
-						>{homePageData.tag}</Badge
-					> on the Internet.
-				</h1>
+				<p class="text-muted-foreground">
+					commonly known as <Badge class="text-white">{homePageData.tag}</Badge> on the Internet.
+				</p>
 			</div>
-			<p class="text-xl">
+			<p class="text-muted-foreground">
 				I'm a
-				<span class="font-semibold text-orange-400">{homePageData.tagline}</span>,
-			</p>
-			<p class="text-xl">
-				currently working at <span class="font-semibold text-orange-400"
-					>{homePageData.organisation}</span
-				>
+				<span class="text-primary font-semibold">{homePageData.tagline}</span>, currently working at
+				<span class="text-primary font-semibold">{homePageData.organisation}</span>
 				as a
-				<span class="font-semibold text-orange-400">{homePageData.role}</span>.
+				<span class="text-primary font-semibold">{homePageData.role}</span>.
 			</p>
-			<p class="text-sm text-muted-foreground sm:text-base">{homePageData.additionalInfo[0]}</p>
-			<p class="text-sm text-muted-foreground sm:text-base">{homePageData.additionalInfo[1]}</p>
+			<p>{homePageData.additionalInfo[0]}</p>
+			<p>{homePageData.additionalInfo[1]}</p>
 		</div>
-		<img 
-			src={ProfilePic} 
-			class="h-40 w-40 rounded-full object-cover sm:h-48 sm:w-48 md:h-64 md:w-64" 
-			alt={homePageData.name} 
+		<enhanced:img
+			src="/src/assets/images/profile.jpeg"
+			class="mx-auto size-40 h-40 w-40 rounded-full object-cover sm:size-48 md:size-64"
+			alt={homePageData.name}
+			fetchpriority="high"
 		/>
 	</div>
-	
+
 	<div class="flex flex-col gap-6">
 		<div class="flex items-center justify-between">
-			<h2 class="text-2xl font-semibold sm:text-3xl">Featured Projects</h2>
-			<a 
-				href="/projects" 
-				class="flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground sm:text-base"
+			<h2 class="text-2xl sm:text-3xl">Featured Projects</h2>
+			<a
+				href="/projects"
+				class="text-muted-foreground hover:text-foreground flex items-center gap-1 text-sm transition-colors sm:text-base"
 			>
 				View all
 				<ArrowUpRight class="h-4 w-4" />
 			</a>
 		</div>
-		
+
 		<div class="grid gap-4 sm:gap-6 md:grid-cols-2">
-			{#each projects.filter(p => p.isFeatured).slice(0, 2) as project}
+			{#each projects.filter((p) => p.isFeatured).slice(0, 2) as project}
 				<a
 					href={project.url || project.github}
 					target="_blank"
-					class="group relative overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-foreground/20 hover:shadow-lg"
+					class="group border-border bg-card hover:border-foreground/20 relative overflow-hidden rounded-xl border transition-all hover:shadow-lg"
 				>
 					{#if project.heroImage}
-						<div class="aspect-video w-full overflow-hidden bg-muted">
+						<div class="bg-muted aspect-video w-full overflow-hidden">
 							<img
 								src={project.heroImage}
 								alt={project.name}
 								class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+								loading="lazy"
+								decoding="async"
 							/>
 						</div>
 					{/if}
-					
+
 					<div class="flex flex-col gap-3 p-4 sm:p-6">
 						<div class="flex items-start justify-between gap-2">
-							<h3 class="text-lg font-semibold sm:text-xl">{project.name}</h3>
-							<ExternalLink class="h-4 w-4 flex-shrink-0 text-muted-foreground transition-colors group-hover:text-foreground" />
+							<h3 class="text-lg font-bold sm:text-2xl">{project.name}</h3>
+							<ExternalLink
+								class="text-muted-foreground group-hover:text-foreground h-4 w-4 flex-shrink-0 transition-colors"
+							/>
 						</div>
-						
-						<p class="line-clamp-2 text-sm text-muted-foreground sm:text-base">
+
+						<p class="text-muted-foreground line-clamp-2 text-sm sm:text-base">
 							{project.description}
 						</p>
-						
+
 						{#if project.tags && project.tags.length > 0}
 							<div class="flex flex-wrap gap-2">
 								{#each project.tags.slice(0, 3) as tag}
-									<!-- <span class="rounded-full bg-muted px-2.5 py-1 text-xs font-medium">
-										{tag}
-									</span> -->
 									<Badge variant="outline">{tag}</Badge>
 								{/each}
 								{#if project.tags.length > 3}
-									<span class="rounded-full bg-muted px-2.5 py-1 text-xs font-medium text-muted-foreground">
-										+{project.tags.length - 3}
-									</span>
+									<Badge variant="secondary">+ {project.tags.length - 3}</Badge>
 								{/if}
 							</div>
 						{/if}
