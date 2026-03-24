@@ -2,7 +2,17 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Favicon -->
+		<link rel="icon" href="%sveltekit.assets%/favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="%sveltekit.assets%/favicon.svg" />
+
+		<!-- Theme -->
+		<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#09090b" media="(prefers-color-scheme: dark)" />
+
+		<!-- Feeds -->
 		<link
 			rel="alternate"
 			type="application/atom+xml"
@@ -10,13 +20,27 @@
 			href="/atom.xml"
 		/>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Default SEO (overridden per-page via svelte:head) -->
+		<meta name="description" content="Portfolio of Tushar Selvakumar, a Software Engineer. Explore projects, blog posts, photos, and more." />
+		<meta name="author" content="Tushar Selvakumar" />
 
-		<meta name="title" content="Tushar Selvakumar – Front-End Developer | Portfolio" />
-		<meta
-			name="description"
-			content="Portfolio of Tushar Selvakumar, a front-end developer and Software Engineer. Explore projects, blog posts, photos, and more."
-		/>
+		<!-- Default Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Tushar Selvakumar" />
+		<meta property="og:title" content="Tushar Selvakumar – Software Engineer | Portfolio" />
+		<meta property="og:description" content="Portfolio of Tushar Selvakumar, a Software Engineer. Explore projects, blog posts, photos, and more." />
+		<meta property="og:url" content="https://macintushar.xyz/" />
+		<meta property="og:image" content="https://github.com/macintushar.png" />
+		<meta property="og:image:alt" content="Tushar Selvakumar" />
+		<meta property="og:locale" content="en_US" />
+
+		<!-- Default Twitter / X Card -->
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@macintushar" />
+		<meta name="twitter:creator" content="@macintushar" />
+		<meta name="twitter:title" content="Tushar Selvakumar – Software Engineer | Portfolio" />
+		<meta name="twitter:description" content="Portfolio of Tushar Selvakumar, a Software Engineer." />
+		<meta name="twitter:image" content="https://github.com/macintushar.png" />
 
 		%sveltekit.head%
 	</head>

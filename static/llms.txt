@@ -1,0 +1,37 @@
+# Tushar Selvakumar
+
+> Software Engineer at AI Squared, passionate about building great software and web experiences.
+
+Tushar Selvakumar (also known as @macintushar online) is a Software Engineer (SDE-1) at AI Squared. He loves building for the web, travelling, and keeping up with the latest in technology — especially from Apple, Google, and the broader tech ecosystem.
+
+## Contact
+
+- Email: hi@macintushar.xyz
+- GitHub: https://github.com/macintushar
+- LinkedIn: https://www.linkedin.com/in/tushar-selvakumar/
+- Website: https://macintushar.xyz
+
+## Projects
+
+- [Curiositi](https://curiositi.xyz): Open-source AI knowledge workspace. Upload documents, organize them into spaces, and chat with an agent that answers using your knowledge and the web. Built with Tanstack Start, Astro, Hono, PostgreSQL, RAG, and TypeScript.
+- [Draw](https://draw.macintushar.xyz): Digital drawing tool that enables creating, editing, and sharing drawings across all devices. Built with React, Supabase, and Excalidraw.
+- [Hawk](https://hawk.macintushar.xyz): Open-source, self-hosted monitoring platform. Track uptime and performance for services, get alerted on incidents, and publish public status pages. Built with Next.js, tRPC, Drizzle, and Turso.
+- [SPKR - Voice Keyboard](https://github.com/macintushar/SPKR-Voice-Keyboard): A keyboard app that turns voice input into translated text.
+- [Sneaker Street](https://github.com/macintushar/SneakerStore): An e-commerce platform for purchasing sneakers.
+
+## Blog
+
+Personal blog covering software engineering, technology, server setup, and more.
+
+- Blog index: https://macintushar.xyz/blog
+- Atom/RSS feed: https://macintushar.xyz/atom.xml
+
+See /llms-full.txt for a complete listing of blog posts with descriptions.
+
+## Pages
+
+- Homepage: https://macintushar.xyz/
+- Projects: https://macintushar.xyz/projects
+- Blog: https://macintushar.xyz/blog
+- Photos: https://macintushar.xyz/photos (travel photography)
+- Sitemap: https://macintushar.xyz/sitemap.xml

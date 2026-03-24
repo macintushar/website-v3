@@ -9,27 +9,21 @@
 
 <svelte:head>
 	<title>Blog | {config.title}</title>
-	<meta name="title" content="Blog | Tushar Selvakumar" />
-	<meta
-		name="description"
-		content="Explore Tushar Selvakumar's blog, featuring insights on front-end development, technology trends, and personal reflections."
-	/>
-	<meta
-		name="keywords"
-		content="blog, Tushar Selvakumar, front-end development, technology, insights"
-	/>
+	<link rel="canonical" href="https://macintushar.xyz/blog" />
+
+	<meta name="description" content="Explore Tushar Selvakumar's blog, featuring insights on software engineering, technology trends, and personal reflections." />
+	<meta name="keywords" content="blog, Tushar Selvakumar, software engineering, technology, insights" />
+
+	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Blog | Tushar Selvakumar" />
-	<meta
-		property="og:description"
-		content="Insights and reflections on technology and development."
-	/>
+	<meta property="og:description" content="Insights and reflections on technology and development." />
 	<meta property="og:url" content="https://macintushar.xyz/blog" />
+	<meta property="og:image" content={config.ogImage} />
+
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="Blog | Tushar Selvakumar" />
-	<meta
-		name="twitter:description"
-		content="Discover Tushar's insights on technology and front-end development."
-	/>
+	<meta name="twitter:description" content="Discover Tushar's insights on technology and software engineering." />
+	<meta name="twitter:image" content={config.ogImage} />
 </svelte:head>
 
 <section class="flex flex-col gap-6">

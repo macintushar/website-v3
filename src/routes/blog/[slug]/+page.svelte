@@ -1,14 +1,57 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils';
+	import * as config from '$lib/config';
 
 	export let data;
+
+	$: canonicalUrl = `${config.canonicalUrl}blog/${data.meta.slug ?? ''}`;
+	$: articleSchema = JSON.stringify({
+		'@context': 'https://schema.org',
+		'@type': 'Article',
+		headline: data.meta.title,
+		description: data.meta.description,
+		datePublished: data.meta.date,
+		dateModified: data.meta.date,
+		url: canonicalUrl,
+		mainEntityOfPage: canonicalUrl,
+		author: {
+			'@type': 'Person',
+			name: config.author.name,
+			url: config.canonicalUrl
+		},
+		publisher: {
+			'@type': 'Person',
+			name: config.author.name,
+			url: config.canonicalUrl
+		},
+		image: config.ogImage,
+		keywords: data.meta.categories?.join(', ')
+	});
 </script>
 
-<!-- SEO -->
 <svelte:head>
-	<title>{data.meta.title}</title>
+	<title>{data.meta.title} | {config.title}</title>
+	<link rel="canonical" href={canonicalUrl} />
+
+	<meta name="description" content={data.meta.description} />
+	{#if data.meta.categories}
+		<meta name="keywords" content={data.meta.categories.join(', ')} />
+	{/if}
+
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
+	<meta property="og:description" content={data.meta.description} />
+	<meta property="og:url" content={canonicalUrl} />
+	<meta property="og:image" content={config.ogImage} />
+	<meta property="article:published_time" content={data.meta.date} />
+	<meta property="article:author" content={config.author.name} />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content={data.meta.title} />
+	<meta name="twitter:description" content={data.meta.description} />
+	<meta name="twitter:image" content={config.ogImage} />
+
+	{@html `<script type="application/ld+json">${articleSchema}</script>`}
 </svelte:head>
 
 <article class="flex w-full flex-col gap-8">

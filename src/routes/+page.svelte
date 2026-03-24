@@ -7,19 +7,20 @@
 
 <svelte:head>
 	<title>{config.title}</title>
+	<link rel="canonical" href="https://macintushar.xyz/" />
 
-	<meta property="og:title" content="Tushar Selvakumar – Front-End Developer | Portfolio" />
-	<meta
-		property="og:description"
-		content="Explore the portfolio of Tushar Selvakumar, including projects, blogs, and photography."
-	/>
+	<meta name="description" content={config.description} />
+
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Tushar Selvakumar // Software Engineer // Portfolio" />
+	<meta property="og:description" content={config.description} />
 	<meta property="og:url" content="https://macintushar.xyz/" />
+	<meta property="og:image" content={config.ogImage} />
 
-	<meta name="twitter:title" content="Tushar Selvakumar – Front-End Developer | Portfolio" />
-	<meta
-		name="twitter:description"
-		content="Discover Tushar's projects and insights as a front-end developer and as a Software Engineer."
-	/>
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Tushar Selvakumar // Software Engineer // Portfolio" />
+	<meta name="twitter:description" content={config.description} />
+	<meta name="twitter:image" content={config.ogImage} />
 </svelte:head>
 
 <main class="flex flex-col space-y-12 sm:space-y-16">

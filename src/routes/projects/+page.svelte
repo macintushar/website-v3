@@ -24,6 +24,20 @@
 
 <svelte:head>
 	<title>Projects | {config.title}</title>
+	<link rel="canonical" href="https://macintushar.xyz/projects" />
+
+	<meta name="description" content="Explore Tushar Selvakumar's software projects, including open-source tools, web apps, and experiments in AI and full-stack development." />
+
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Projects | Tushar Selvakumar" />
+	<meta property="og:description" content="Explore Tushar's software projects — Curiositi, Draw, Hawk, and more." />
+	<meta property="og:url" content="https://macintushar.xyz/projects" />
+	<meta property="og:image" content={config.ogImage} />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Projects | Tushar Selvakumar" />
+	<meta name="twitter:description" content="Explore Tushar's software projects — Curiositi, Draw, Hawk, and more." />
+	<meta name="twitter:image" content={config.ogImage} />
 </svelte:head>
 
 <div class="flex flex-col space-y-5">

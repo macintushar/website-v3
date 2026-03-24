@@ -13,6 +13,35 @@
 	import '../app.css';
 	import Footer from '$lib/views/footer.svelte';
 	import { dev } from '$app/environment';
+
+	const websiteSchema = JSON.stringify({
+		'@context': 'https://schema.org',
+		'@type': 'WebSite',
+		name: config.title,
+		url: config.canonicalUrl,
+		description: config.description,
+		inLanguage: 'en',
+		author: {
+			'@type': 'Person',
+			name: config.author.name,
+			url: config.canonicalUrl
+		}
+	});
+
+	const personSchema = JSON.stringify({
+		'@context': 'https://schema.org',
+		'@type': 'Person',
+		name: config.author.name,
+		url: config.canonicalUrl,
+		email: config.author.email,
+		jobTitle: config.author.jobTitle,
+		worksFor: {
+			'@type': 'Organization',
+			name: config.author.worksFor
+		},
+		sameAs: [config.author.github, config.author.linkedin],
+		image: config.ogImage
+	});
 </script>
 
 <ModeWatcher />
@@ -20,6 +49,10 @@
 <svelte:head>
 	<title>{config.title}</title>
 	<meta name="google-site-verification" content="o9lr1Nf-ex7J8PExLJ8Xr2AbcWlbYyelyApLl1nNsuo" />
+	<!-- JSON-LD: WebSite schema -->
+	{@html `<script type="application/ld+json">${websiteSchema}</script>`}
+	<!-- JSON-LD: Person schema -->
+	{@html `<script type="application/ld+json">${personSchema}</script>`}
 	{#if !dev}
 		<script
 			defer
